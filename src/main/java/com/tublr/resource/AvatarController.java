@@ -19,7 +19,7 @@ import com.tumblr.process.PixelCounter;
 public class AvatarController {
  
 
-	    @RequestMapping(value = "/avatar/pixel/blogName/{blogName}/count/{count}", method = RequestMethod.GET)
+	    @RequestMapping(value = "avatar/pixel/blogName/{blogName}/count/{count}", method = RequestMethod.GET)
 	    @ResponseBody
 	    public List<Entry<String, Integer>> getFoosBySimplePathWithPathVariables
 	      (@PathVariable String blogName, @PathVariable int count) throws Exception {
